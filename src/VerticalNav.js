@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import logo from './logo.png';
+import { Link } from 'react-router-dom'
 import './VerticalNav.css'
 
 export class VerticalNav extends Component {
@@ -9,15 +10,15 @@ export class VerticalNav extends Component {
                 <div className="VerticalNav-container">
                     <div>
                         <ul className='VerticalNav-logo'>
-                            <li><a href=""><img src={logo}></img></a></li>
+                            <li><Link to=""><img src={logo} alt="logo"></img></Link></li>
                         </ul>
                         <ul className='VerticalNav-list'>
-                            <li className='active'><a href=""><i className="fa fa-home"></i></a></li>
-                            <li><a href=""><i className="fa fa-folder"></i></a></li>
-                            <li><a href=""><i className="fa fa-envelope"></i></a></li>
-                            <li><a href=""><i className="fa fa-calendar"></i></a></li>
-                            <li><a href=""><i className="fa fa-plane"></i></a></li>
-                            <li><a href=""><i className="fa fa-cog"></i></a></li>
+                            <li className='active'><Link to=""><i className="fa fa-home"></i></Link></li>
+                            <li><Link to=""><i className="fa fa-folder"></i></Link></li>
+                            <li><Link to=""><i className="fa fa-envelope"></i></Link></li>
+                            <li><Link to=""><i className="fa fa-calendar"></i></Link></li>
+                            <li><Link to=""><i className="fa fa-plane"></i></Link></li>
+                            <li><Link to=""><i className="fa fa-cog"></i></Link></li>
                         </ul>
                     </div>
                 </div>

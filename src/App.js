@@ -1,7 +1,6 @@
 import './App.css';
 import Dashboard from './Dashboard';
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-import { Redirect } from "react-router"
 function App() {
   return (
     <div className="App">

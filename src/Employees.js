@@ -34,28 +34,32 @@ export class Employees extends Component {
                 {this.state.isVisible &&
                     <table>
                         <thead>
-                            <td>Employee Code</td>
-                            <td>Department</td>
-                            <td>Name</td>
-                            <td>Mobile</td>
-                            <td>Gender</td>
-                        </thead>
-                        <tr>
-                            <td>EMP101</td>
-                            <td>Finance</td>
-                            <td>John Doe</td>
-                            <td>987654321</td>
-                            <td>Female</td>
-                        </tr>
-                        {this.state.employees.map(emp => (
                             <tr>
-                                <td>{emp.empcode}</td>
-                                <td>{emp.deptt}</td>
-                                <td>{emp.name}</td>
-                                <td>+91 {emp.mobile}</td>
-                                <td>{emp.gender}</td>
+                                <td>Employee Code</td>
+                                <td>Department</td>
+                                <td>Name</td>
+                                <td>Mobile</td>
+                                <td>Gender</td>
                             </tr>
-                        ))}
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>EMP101</td>
+                                <td>Finance</td>
+                                <td>John Doe</td>
+                                <td>987654321</td>
+                                <td>Female</td>
+                            </tr>
+                            {this.state.employees.map(emp => (
+                                <tr>
+                                    <td>{emp.empcode}</td>
+                                    <td>{emp.deptt}</td>
+                                    <td>{emp.name}</td>
+                                    <td>+91 {emp.mobile}</td>
+                                    <td>{emp.gender}</td>
+                                </tr>
+                            ))}
+                        </tbody>
                     </table>}
 
             </div>

@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import './Charts.css'
-import { LineChart, Line, PieChart, Pie, Sector, Cell, ResponsiveContainer } from 'recharts';
+import { PieChart, Pie, ResponsiveContainer } from 'recharts';
 import axios from 'axios';
 export class Charts extends Component {
     constructor(props) {
@@ -17,9 +17,9 @@ export class Charts extends Component {
             .catch(err => console.log(err))
     }
     render() {
-        let dashboardData = this.props.data.map(d => {
+        let dashboardData = this.props.data.map((d, key) => {
             return (
-                <div className="Chart Chart-blue">
+                <div className="Chart Chart-blue" key={key}>
                     <div className='Chart-heading'>
                         <div>
                             <p>{d.title}</p>
