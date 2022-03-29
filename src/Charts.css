@@ -1,0 +1,150 @@
+.Charts{
+	padding: 0 4.6rem;
+}
+
+.Charts-row{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 1.5em;
+}
+
+.Chart{
+	padding: 2em;
+	background-color: #f3f3f3;
+	border-radius: 10px;
+	font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.Chart-blue{
+    background-color: rgba(215, 211, 225,0.3);
+}
+
+/* .Chart-purple{
+    background-color: rgba(255, 183, 251, 0.3);
+}
+
+.Chart-green{
+    background-color: rgba(182, 226, 201,0.3);
+} */
+
+.Chart-heading{
+	display: flex;
+    flex-direction: column;
+}
+
+.Chart-heading-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.Chart-heading div{
+    color: gray;
+}
+
+.Chart-heading select{
+	border: none;
+	background-color: inherit;
+	color: gray;
+	font-weight: 500;
+}
+
+.Chart-main-data{
+	font-size: 2em;
+	font-family: 'Atkinson Hyperlegible', sans-serif;
+	padding: 0.8em 0;
+}
+
+.Chart-stats{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+.Chart-stats p{
+	color: #C400FF;
+	font-size: 0.8em;
+}
+
+div.recharts-responsive-container {
+	height: 200px !important;
+    width: 200px !important;
+    /* position: absolute; */
+    /* left: 800px;
+    top: 350px; */
+    /* left: 53%;
+    top: 80%; */
+}
+
+div.recharts-responsive-container svg{
+	height: 150px !important;
+} 
+
+div.recharts-responsive-container svg > g g:nth-of-type(1) path{
+	fill: rgb(117, 206, 117) !important;
+}
+
+div.recharts-responsive-container svg > g g:nth-of-type(2) path{
+	fill: #b9b9b9 !important;
+}
+
+div.recharts-responsive-container svg > g g:nth-of-type(3) path{
+	fill: cadetblue !important;
+}
+
+div.recharts-responsive-container svg > g g:nth-of-type(4) path{
+	fill: rgb(221, 144, 0) !important;
+}
+
+
+/* responsive */
+@media (max-width: 1200px) { 
+	.Chart-heading div{
+		font-size: 1rem;
+	}
+	.Chart-main-data{
+		font-size: 1.7rem;
+	}
+	.Chart-stats{
+		flex-direction: column-reverse;
+		align-items: flex-start;
+		margin-top: 10px;
+	}
+}
+
+@media (max-width: 1050px) { 
+	.Chart-heading div{
+		font-size: 0.8rem;
+	}
+}
+
+@media (max-width: 815px) { 
+	.Charts{
+		width: 90%;
+		margin: 0 auto;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.Chart{
+		text-align: center;
+	}
+	.Chart-stats{
+		align-items: center;
+	}
+}
+
+@media (max-width: 545px) { 
+	.Charts-row{
+		text-align: center;
+		grid-template-columns: none;
+		grid-template-rows: 1fr 1fr 1fr;
+	}
+	.Chart-heading-container{
+		text-align: center;
+	}
+	.Chart-heading div{
+		justify-content: center;
+	}
+}

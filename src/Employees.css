@@ -1,0 +1,72 @@
+.Employees{
+	padding: 3.5rem 4.6rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.Employees-header-container{
+    display: flex;
+    align-items: center;
+}
+
+.Employees-header-container p{
+    font-size: 1.2rem;
+}
+
+.Employees-header-container button{
+    margin-left: 10px;
+    color: #C400FF;
+    border: none;
+    background: none;
+    font-weight: bold;
+    letter-spacing: 1.1px;
+    font-size: 0.8rem;
+    transform: translate(0%, 5%);
+    cursor: pointer;
+
+}
+
+.Employees hr{
+    margin: 1rem 0;
+    color: #ddd;
+    border: none;
+    background-color: #ddd;
+    height: 1px;
+}
+
+.Employees table{
+    width: 100%;
+    border: 1px solid #ddd;
+    border-left: none;
+    border-right: none;
+    font-size: 0.8rem;
+
+}
+
+.Employees thead{
+    color: #C400FF;
+}
+
+.Employees td{
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+}
+
+@media (max-width: 815px) { 
+    .Employees{
+        width: 90%;
+        margin: 0 auto;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .Employees-header-container{
+        justify-content: center;
+    }
+}
+
+@media (max-width: 545px) { 
+    .Employees td{
+        padding: 0;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+}

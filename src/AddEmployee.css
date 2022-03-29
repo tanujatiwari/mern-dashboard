@@ -1,0 +1,35 @@
+.AddEmployee{
+    margin: 1rem 0;
+    width: 100%;
+}
+
+.AddEmployee form{
+    display: flex;
+    justify-content: space-between;
+}
+
+.AddEmployee input{
+    width: 100%;
+    padding: 7px;
+    border: 1px solid #ddd;
+}
+
+.AddEmployee input:focus{
+    outline: 1px solid rgb(160, 160, 160);
+}
+
+.AddEmployee button{
+    white-space: nowrap; 
+    min-width: auto;
+    color: #C400FF;
+    border: none;
+    padding: 0.7rem;
+    font-family: 'Poppins';
+    border: 1px solid rgb(240,240,240);
+    cursor: pointer;
+}
+
+.AddEmployee button i{
+    font-weight: inherit;
+    font-size: 12px;
+}
