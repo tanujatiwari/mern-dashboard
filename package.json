@@ -22,7 +22,7 @@
     "eject": "react-scripts eject"
   },
   "engines": {
-    "node": "10.16.0"
+    "node": "14.15.1"
   },
   "eslintConfig": {
     "extends": [
